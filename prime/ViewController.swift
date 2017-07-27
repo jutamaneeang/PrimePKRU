@@ -30,9 +30,10 @@ class ViewController: UIViewController {
             //chack Number or Artical
             if let intNumberFromTextFeild = Int(strNumberFromTextField) {
                 print("This is Number")
-                resultLabel.text = strAlertNum
+               
             }else{
                 print("This Arical")
+                 resultLabel.text = strAlertcal
             }
             
         } else{
