@@ -12,6 +12,8 @@
 		B163CE5C1F298EEE00F900CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B163CE5A1F298EEE00F900CA /* Main.storyboard */; };
 		B163CE5E1F298EEE00F900CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B163CE5D1F298EEE00F900CA /* Assets.xcassets */; };
 		B163CE611F298EEE00F900CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B163CE5F1F298EEE00F900CA /* LaunchScreen.storyboard */; };
+		B163CE691F2991E900F900CA /* web-prime-numbers-RF-getty.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B163CE681F2991E900F900CA /* web-prime-numbers-RF-getty.jpg */; };
+		B163CE6B1F29928D00F900CA /* maxresdefault.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B163CE6A1F29928D00F900CA /* maxresdefault.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		B163CE5D1F298EEE00F900CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B163CE601F298EEE00F900CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B163CE621F298EEE00F900CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B163CE681F2991E900F900CA /* web-prime-numbers-RF-getty.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "web-prime-numbers-RF-getty.jpg"; path = "../../../../Desktop/web-prime-numbers-RF-getty.jpg"; sourceTree = "<group>"; };
+		B163CE6A1F29928D00F900CA /* maxresdefault.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = maxresdefault.jpg; path = ../../../../Desktop/maxresdefault.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +58,9 @@
 		B163CE551F298EEE00F900CA /* prime */ = {
 			isa = PBXGroup;
 			children = (
+				B163CE681F2991E900F900CA /* web-prime-numbers-RF-getty.jpg */,
 				B163CE561F298EEE00F900CA /* AppDelegate.swift */,
+				B163CE6A1F29928D00F900CA /* maxresdefault.jpg */,
 				B163CE581F298EEE00F900CA /* ViewController.swift */,
 				B163CE5A1F298EEE00F900CA /* Main.storyboard */,
 				B163CE5D1F298EEE00F900CA /* Assets.xcassets */,
@@ -124,6 +130,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B163CE611F298EEE00F900CA /* LaunchScreen.storyboard in Resources */,
+				B163CE691F2991E900F900CA /* web-prime-numbers-RF-getty.jpg in Resources */,
+				B163CE6B1F29928D00F900CA /* maxresdefault.jpg in Resources */,
 				B163CE5E1F298EEE00F900CA /* Assets.xcassets in Resources */,
 				B163CE5C1F298EEE00F900CA /* Main.storyboard in Resources */,
 			);
