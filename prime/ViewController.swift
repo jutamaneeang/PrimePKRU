@@ -12,6 +12,9 @@ class ViewController: UIViewController {
     
     let strAlertHaveSpace = "please Fill Number"
     let strAlertcal = "Please Number"
+    let strArlerNotPrime = "not Prime"
+    let steArlerBePeime = "is Prime"
+    
     
     
     @IBOutlet weak var numberTextField: UITextField!
@@ -30,6 +33,32 @@ class ViewController: UIViewController {
             //chack Number or Artical
             if let intNumberFromTextFeild = Int(strNumberFromTextField) {
                 print("This is Number")
+                
+                if intNumberFromTextFeild != 1{
+                    // Not 1
+                    var intMyNumber = 2
+                    var bolPrime:Bool = true
+                    
+                    while intMyNumber < intNumberFromTextFeild {
+                        if intNumberFromTextFeild % intMyNumber == 0 {
+                            bolPrime = false
+                        }
+                        intMyNumber += 1
+                    } //while
+                    
+                    if bolPrime {
+                        resultLabel.text = "\(intNumberFromTextFeild)" + steArlerBePeime
+                    }else{
+                    
+                    resultLabel.text = "\(intNumberFromTextFeild)" + strArlerNotPrime
+                    
+                    }
+                    
+                    
+                }else{
+                    resultLabel.text = "\(strNumberFromTextField)" + strArlerNotPrime
+                }
+                
                
             }else{
                 print("This Arical")
