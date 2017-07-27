@@ -62,7 +62,7 @@
                                 <rect key="frame" x="35" y="132" width="156" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.57375040981431757" green="1" blue="0.56916057156567534" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="textColor" red="0.52934044599533081" green="0.97537451982498169" blue="0.55528002977371216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -74,9 +74,12 @@
                                     <constraint firstAttribute="height" constant="30" id="qR0-my-gxz"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Check">
                                     <color key="titleColor" red="0.27877622749023334" green="0.3461405414856249" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="checkButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jaA-KG-MmG"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press Button For check" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iUK-Vw-i2P">
                                 <rect key="frame" x="20" y="323" width="374" height="30"/>
@@ -105,6 +108,10 @@
                             <constraint firstItem="kM0-ib-8eV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tdM-7k-FBd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="numberTextField" destination="9Y8-Mj-wJx" id="YYm-oH-347"/>
+                        <outlet property="resultLabel" destination="iUK-Vw-i2P" id="hcQ-XA-NXR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
