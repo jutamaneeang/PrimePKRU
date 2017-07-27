@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,27 +19,41 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="maxresdefault.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mnk-uk-LDt">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="maxresdefault.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mnk-uk-LDt">
+                                <rect key="frame" x="0.0" y="0.0" width="416" height="736"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="667" id="kp3-fj-IPA"/>
                                     <constraint firstAttribute="width" constant="375" id="lch-IA-HEF"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kM0-ib-8eV">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kM0-ib-8eV">
+                                <rect key="frame" x="-1" y="-1" width="416" height="738"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vPu-Wc-GgU">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vPu-Wc-GgU">
+                                        <rect key="frame" x="0.0" y="0.0" width="416" height="738"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="416" id="tLv-iG-1UY"/>
+                                            <constraint firstAttribute="height" constant="738" id="xHG-i7-FKD"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="vPu-Wc-GgU" firstAttribute="centerX" secondItem="kM0-ib-8eV" secondAttribute="centerX" id="OG1-8u-FmW"/>
+                                    <constraint firstItem="vPu-Wc-GgU" firstAttribute="top" secondItem="kM0-ib-8eV" secondAttribute="top" id="PDO-OJ-Hmo"/>
+                                    <constraint firstAttribute="trailing" secondItem="vPu-Wc-GgU" secondAttribute="trailing" id="d1l-p3-hRv"/>
+                                    <constraint firstAttribute="bottom" secondItem="vPu-Wc-GgU" secondAttribute="bottom" id="oaP-Oz-zV0"/>
+                                    <constraint firstItem="vPu-Wc-GgU" firstAttribute="leading" secondItem="kM0-ib-8eV" secondAttribute="leading" id="vjK-Ra-gcN"/>
+                                </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please Check Prime Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUi-be-C2T">
-                                <rect key="frame" x="29" y="48" width="317" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Check Prime Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUi-be-C2T">
+                                <rect key="frame" x="48.333333333333343" y="48" width="317.66666666666663" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="317.67000000000002" id="fFz-EK-VH8"/>
+                                    <constraint firstAttribute="height" constant="29" id="qoX-4j-Alv"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                 <color key="textColor" red="0.17992413673229105" green="0.569221792439223" blue="0.97680455446243286" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -52,8 +66,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aex-dw-LaD">
-                                <rect key="frame" x="242" y="132" width="74" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aex-dw-LaD">
+                                <rect key="frame" x="286" y="132" width="65" height="30"/>
                                 <color key="backgroundColor" red="0.52773161095147159" green="0.97680455446243286" blue="0.55711365519660294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="65" id="b4S-sl-Kdl"/>
@@ -64,8 +78,8 @@
                                     <color key="titleColor" red="0.27877622749023334" green="0.3461405414856249" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Press Button For check" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iUK-Vw-i2P">
-                                <rect key="frame" x="16" y="323" width="343" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press Button For check" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iUK-Vw-i2P">
+                                <rect key="frame" x="20" y="323" width="374" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -74,17 +88,27 @@
                         <color key="backgroundColor" red="0.61858153962535867" green="0.87699225384022972" blue="1" alpha="0.57288099315068497" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="iUK-Vw-i2P" secondAttribute="trailing" id="4yc-31-Loc"/>
+                            <constraint firstItem="mnk-uk-LDt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="9oe-mr-1Rg"/>
+                            <constraint firstItem="aex-dw-LaD" firstAttribute="top" secondItem="EUi-be-C2T" secondAttribute="bottom" constant="55" id="C4O-Mf-T8o"/>
                             <constraint firstItem="iUK-Vw-i2P" firstAttribute="top" secondItem="aex-dw-LaD" secondAttribute="bottom" constant="161" id="J4h-uu-Xzk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aex-dw-LaD" secondAttribute="trailing" constant="43" id="Kcb-ei-JJm"/>
+                            <constraint firstAttribute="trailing" secondItem="mnk-uk-LDt" secondAttribute="trailing" id="P1S-RU-EXW"/>
+                            <constraint firstItem="EUi-be-C2T" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="28" id="PoJ-Rh-fWb"/>
                             <constraint firstItem="iUK-Vw-i2P" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Rgc-B1-j6r"/>
+                            <constraint firstItem="EUi-be-C2T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TXg-nI-ZUl"/>
                             <constraint firstItem="iUK-Vw-i2P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c6e-W0-no2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mnk-uk-LDt" secondAttribute="bottom" id="cFe-bE-ntz"/>
+                            <constraint firstItem="mnk-uk-LDt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eyH-bx-9bK"/>
+                            <constraint firstAttribute="trailing" secondItem="mnk-uk-LDt" secondAttribute="trailing" id="pHj-UH-5Ce"/>
                             <constraint firstItem="kM0-ib-8eV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pI5-lU-Vhk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mnk-uk-LDt" secondAttribute="bottom" id="ruw-Uv-uQm"/>
                             <constraint firstItem="kM0-ib-8eV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tdM-7k-FBd"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-98.400000000000006" y="123.68815592203899"/>
+            <point key="canvasLocation" x="-98.550724637681171" y="123.09782608695653"/>
         </scene>
     </scenes>
     <resources>

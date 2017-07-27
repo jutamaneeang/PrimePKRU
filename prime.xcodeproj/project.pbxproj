@@ -14,6 +14,7 @@
 		B163CE611F298EEE00F900CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B163CE5F1F298EEE00F900CA /* LaunchScreen.storyboard */; };
 		B163CE691F2991E900F900CA /* web-prime-numbers-RF-getty.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B163CE681F2991E900F900CA /* web-prime-numbers-RF-getty.jpg */; };
 		B163CE6B1F29928D00F900CA /* maxresdefault.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B163CE6A1F29928D00F900CA /* maxresdefault.jpg */; };
+		B163CE6D1F29A09000F900CA /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B163CE6C1F29A09000F900CA /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		B163CE621F298EEE00F900CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B163CE681F2991E900F900CA /* web-prime-numbers-RF-getty.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "web-prime-numbers-RF-getty.jpg"; path = "../../../../Desktop/web-prime-numbers-RF-getty.jpg"; sourceTree = "<group>"; };
 		B163CE6A1F29928D00F900CA /* maxresdefault.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = maxresdefault.jpg; path = ../../../../Desktop/maxresdefault.jpg; sourceTree = "<group>"; };
+		B163CE6C1F29A09000F900CA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 		B163CE4A1F298EEE00F900CA = {
 			isa = PBXGroup;
 			children = (
+				B163CE6C1F29A09000F900CA /* README.md */,
 				B163CE551F298EEE00F900CA /* prime */,
 				B163CE541F298EEE00F900CA /* Products */,
 			);
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B163CE6D1F29A09000F900CA /* README.md in Sources */,
 				B163CE591F298EEE00F900CA /* ViewController.swift in Sources */,
 				B163CE571F298EEE00F900CA /* AppDelegate.swift in Sources */,
 			);
