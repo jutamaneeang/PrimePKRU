@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     let strAlertHaveSpace = "please Fill Number"
+    let strAlertcal = "Please Number"
     
     
     @IBOutlet weak var numberTextField: UITextField!
@@ -25,6 +26,15 @@ class ViewController: UIViewController {
         if strNumberFromTextField != ""{
            
             print("No Space")
+            
+            //chack Number or Artical
+            if let intNumberFromTextFeild = Int(strNumberFromTextField) {
+                print("This is Number")
+                resultLabel.text = strAlertNum
+            }else{
+                print("This Arical")
+            }
+            
         } else{
          print("Have Space")
             resultLabel.text = strAlertHaveSpace
